@@ -10,6 +10,13 @@
 
 @media (max-width: 600px) {
 
+    header {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .item-container {
         width: 90%;
     }
@@ -29,7 +36,7 @@ body {
     min-height: 100dvh;
     padding: 10px;
     background-color: #1f1717;
-    color: #fff;
+    color: #ffffff;
 }
 
 .hidden {
@@ -40,21 +47,16 @@ body {
 header {
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+    background-color: #1f1717;
 }
 
 header > img {
 
-    width: 200px;
+    width: 100px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
-}
-
-header > p {
-
-    margin: 25px 0 10px 0;
 }
 
 main {

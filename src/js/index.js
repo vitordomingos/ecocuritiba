@@ -2,7 +2,7 @@ const ecopontos = ['Ecoponto Jandaia', 'Ecoponto Vila Nova ', 'Ecoponto Érico V
 
 const ecopontosSection = document.getElementById('main-section')
 
-const teste = {
+const ecopontosInfos = {
     "Ecoponto Jandaia": {
         "adress": "R. Jorn. José Pedro dos Santos - Pedrinho, 801",
         "iframeLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.5103724131623!2d-49.244565099999996!3d-25.554681600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfbd4bc043a03%3A0x2bdb3b900d453a63!2sRua%20Jornalista%20Jos%C3%A9%20Pedro%20dos%20Santos%20Pedrinho%2C%20801%20-%20Ganchinho%2C%20Curitiba%20-%20PR%2C%2081935-430!5e0!3m2!1spt-BR!2sbr!4v1730039149433!5m2!1spt-BR!2sbr"
@@ -58,14 +58,14 @@ const teste = {
 }
 
 
-for (let key in teste) {
+for (let key in ecopontosInfos) {
 
     ecopontosSection.innerHTML += `<div class="item-container">
                 <h2 class="item-name">${key}</h2>
                 <p class="item-adress"><strong>Endereço:
-                </strong> ${teste[key].adress}</p>
+                </strong> ${ecopontosInfos[key].adress}</p>
                 <button class="item-button button" name="${key}" type="button">Ver no Mapa</button>
-                <iframe title="Map Location" class="hidden ${key}" src="${teste[key].iframeLink}" width="95%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer"></iframe>
+                <iframe title="Map Location" class="hidden ${key}" src="${ecopontosInfos[key].iframeLink}" width="95%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer"></iframe>
             </div>`
 }
 
